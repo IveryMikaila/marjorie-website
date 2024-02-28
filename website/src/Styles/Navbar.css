@@ -3,42 +3,49 @@ html,body{
     padding: 0;
     min-height: 100dvh;
 }
-.navigation{
+.navigation-m{
     position: fixed;
 }
-.nav{
+.nav-m{
     display: none;
 }
-
-.nav-active{
+.hamburger-container-m{
+    position: relative;
+    z-index: 15;
+}
+.nav-active-m{
 position: fixed;
-height: 100dvh;
-width: 100%;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
 font-family: Arial Black, Helvetica, sans-serif;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+background-color: black;
+z-index: 10;
 }
-.nav-links{
+.nav-links-m{
 text-align: center;
 }
-.nav-link{
+.nav-link-m{
     display: block;
     text-decoration: none;
     margin: 10px;
-    color: #000;
+    color: #fff;
     font-size: 60px;
 }
 /* Responsive Code */
 
 @media (max-height: 300px) {
-    .nav-link{
+    .nav-link-m{
         font-size: 30px;
     }
   }
   @media (max-width: 300px) {
-    .nav-link{
+    .nav-link-m{
         font-size: 30px;
     }
   }

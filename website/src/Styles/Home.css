@@ -1,0 +1,24 @@
+.home-page{
+    background-image: url('../assets/2.png');
+    width: 100dvw;
+    height: 100dvh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.book{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.carousel-m{
+    width: 80dvh;
+}
+.carousel-item-m{
+    text-align: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    padding: 30px !important;
+   background-color: black !important;
+   border-radius: 10px;
+}
