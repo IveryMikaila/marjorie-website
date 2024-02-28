@@ -1,24 +1,19 @@
-.home-page{
-    background-image: url('../assets/2.png');
-    width: 100dvw;
-    height: 100dvh;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.book{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.carousel-m{
-    width: 80dvh;
-}
-.carousel-item-m{
-    text-align: center;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon{
-    padding: 30px !important;
-   background-color: black !important;
-   border-radius: 10px;
-}
+  .hero-web{
+    width: 100%;
+    height: 100%;
+  }
+  .hero-mobile{
+    width: 100%;
+    height: 100%;
+  }
+/* Responsive Code */
+@media only screen and (min-width: 800px) {
+  .hero-mobile{
+    display: none;
+  }
+  }
+  @media only screen and (max-width: 799px) {
+    .hero-web{
+      display: none;
+    }
+    }

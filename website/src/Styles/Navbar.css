@@ -1,19 +1,21 @@
 html,body{
     margin: 0;
     padding: 0;
-    min-height: 100dvh;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
-.navigation-m{
+.navigation{
     position: fixed;
 }
-.nav-m{
+.nav{
     display: none;
 }
-.hamburger-container-m{
+.hamburger-container{
     position: relative;
     z-index: 15;
 }
-.nav-active-m{
+.nav-active{
 position: fixed;
 top: 0;
 left: 0;
@@ -27,10 +29,10 @@ align-items: center;
 background-color: black;
 z-index: 10;
 }
-.nav-links-m{
+.nav-links{
 text-align: center;
 }
-.nav-link-m{
+.nav-link{
     display: block;
     text-decoration: none;
     margin: 10px;
@@ -40,12 +42,12 @@ text-align: center;
 /* Responsive Code */
 
 @media (max-height: 300px) {
-    .nav-link-m{
+    .nav-link{
         font-size: 30px;
     }
   }
   @media (max-width: 300px) {
-    .nav-link-m{
+    .nav-link{
         font-size: 30px;
     }
   }
