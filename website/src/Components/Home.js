@@ -36,6 +36,9 @@ Time: 10:00 AM - 2:00 PM
 Location:
 240 Naugatuck Avenue,
 Milford, CT 06460
+<br/>
+<br/>
+<a href='/contact'>RSVP here.</a>
 </p>
 
 </div>
