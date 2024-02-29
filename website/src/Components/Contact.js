@@ -9,8 +9,8 @@ const Contact = () => {
 <p>If you have any questions regarding mentoring, our women's conference or to RSVP please indicate your interest in the contact form below. </p>
 <div className='contact-form'>
 <form action="https://formsubmit.co/marjoriemcallsiter@gmail.com" method="POST">
-<input type="hidden" name="_next" value="/thankyou"/>
-<input type="hidden" name="_subject" value="New Contact Form Submission!" />
+<input type="hidden" name="_next" value="https://restoringbrokenvessels.netlify.app/thankyou"/>
+<input type="hidden" name="_subject" value="New Contact Form Submission" />
 <label for="name">Full Name:</label>
      <input id='name' type="text" name="Full Name" required />
      <label for="email">Email:</label>
