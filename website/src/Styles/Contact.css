@@ -92,4 +92,33 @@ transition: all 1s ease-in-out;
     }
        
 }
- 
+ /* Thank you Page */
+.submit-container{
+    min-height: 100dvh;
+    background-color: #E890B1;
+    color: #fff;
+    font-family: Arial Black, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.submit-container svg{
+    transition: all 1s ease-in-out;
+animation: animation 1s 1;
+    font-size: 100px;
+}
+@keyframes animation {
+    0%{
+        font-size: 50px;
+    }
+   25%{
+        font-size: 75px;
+    }
+  75%{
+        font-size: 105px;
+    }
+    100%{
+        font-size: 100px;
+    }
+}
