@@ -6,18 +6,31 @@ const Navbar = () => {
 const [open, setOpen] = useState(false);
 
   return (
-    <div className='navigation'>
-      <div className='hamburger-container'>
-    <Hamburger color='#fff' toggled={open} toggle={setOpen} />
+    <div className='nav-bar'>
+<div className='navigation'>
+<h1>Restoring Broken Vessels </h1>
+
+<div className='group'>
+ 
+
+    <a  href='/contact'>
+      Contact Us
+    </a>
+ 
+
+    <div className='hamburger-container'>
+    <Hamburger color='#E23225' toggled={open} toggle={setOpen} />
     </div>
-    
-<div className={open ? 'nav-active' : 'nav' }>
+    </div>
+    </div>
+
+    <div className={open ? 'nav-active' : 'nav' }>
   <div className='nav-links'>
   <a className='nav-link' href='/'>Home</a>
+  <a className='nav-link' href='/aboutus'>About</a>
 <a className='nav-link' href='/contact'>Contact</a>
   </div>
 </div>
-    
     </div>
   )
 }

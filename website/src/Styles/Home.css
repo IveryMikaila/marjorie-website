@@ -1,4 +1,12 @@
 :root{
   --theme-color: #FAE0E2; 
-  --text-color: #54016D;
+  --text-color: #E23225;
+}
+@font-face {
+  font-family: 'theme-font';
+  src: url('../assets/DancingScript-VariableFont_wght.ttf');
+}
+
+html,body{
+  background-color: var(--theme-color);
 }

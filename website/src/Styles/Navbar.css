@@ -3,58 +3,85 @@ html,body{
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+}
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    z-index: 30;
 }
 .navigation{
-    position: fixed;
+ width: 100%;
+  color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.navigation h1{
+    font-family: 'theme-font';
+    margin: 0;
+    padding: 10px;
+}
+.group{
+    padding: 10px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.group a{
+    background-color: var(--text-color);
+    padding: 15px;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 6ms ease-in-out;
+}
+.group a:hover{
+background-color: var(--theme-color);
+color: var(--text-color);
+border: 1px solid var(--text-color);
+}
+
 .nav{
+    position: relative;
     display: none;
 }
-.hamburger-container{
-    position: relative;
-    z-index: 15;
-    margin: 20px;
-}
 .nav-active{
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-font-family: Arial Black, Helvetica, sans-serif;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: black;
-z-index: 10;
+    position: relative;
+    animation: menu 3s 1;
+    transition: all 3s ease-in-out;
+    background-color: var(--theme-color);
 }
 .nav-links{
-text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .nav-link{
-    display: block;
     text-decoration: none;
-    margin: 10px;
-    color: #fff;
-    font-size: 60px;
+    color: var(--text-color);
+padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid var(--text-color);
 }
-/* Responsive Code */
 
-@media (max-height: 300px) {
-    .nav-link{
-        font-size: 30px;
+@keyframes menu {
+  0%{
+    top: -10px;
+}
+    100%{
+        top: 0;
     }
   }
-  @media (max-width: 300px) {
-    .nav-link{
-        font-size: 30px;
-    }
-  }
-  @media (max-width: 600px) {
-    .hamburger-container{
-        margin: 0;
+    
+  /* Resonsive Code*/
+
+  @media only screen 
+and (max-width : 600px) {
+	.group a{
+        display: none;
     }
 
-  }
+}
