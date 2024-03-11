@@ -27,7 +27,7 @@ const [open, setOpen] = useState(false);
     <div className={open ? 'nav-active' : 'nav' }>
   <div className='nav-links'>
   <a className='nav-link' href='/'>Home</a>
-  <a className='nav-link' href='/aboutus'>About</a>
+  <a className='nav-link' href='/about-us'>About</a>
 <a className='nav-link' href='/contact'>Contact</a>
   </div>
 </div>
