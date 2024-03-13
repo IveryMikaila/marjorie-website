@@ -19,7 +19,7 @@ const [open, setOpen] = useState(false);
  
 
     <div className='hamburger-container'>
-    <Hamburger color='#E23225' toggled={open} toggle={setOpen} />
+    <Hamburger color='#79216D' toggled={open} toggle={setOpen} />
     </div>
     </div>
     </div>

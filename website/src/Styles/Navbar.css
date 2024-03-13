@@ -6,8 +6,10 @@ html,body{
 }
 .nav-bar{
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 30;
+    background-color: var(--theme-color);
 }
 .navigation{
  width: 100%;
