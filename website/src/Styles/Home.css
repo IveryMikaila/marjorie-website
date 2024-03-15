@@ -17,5 +17,32 @@ html,body{
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--theme-color);
+  background-color: #000;
+}
+
+/* Homepage Styles */
+
+.hero-web{
+  width: 100%;
+  min-height: 100dvh;
+  background: url('../assets/hero-web.svg');
+background-repeat: no-repeat;
+background-position-x: center;
+background-size: contain;
+}
+.hero-mobile{
+  display: none;
+  width: 100%;
+  min-height: 100dvh;
+  background: url('../assets/hero-mobile.svg');
+background-repeat: no-repeat;
+background-position-x: center;
+background-size: contain;
+}
+@media only screen 
+and (max-width : 600px) {
+
+.hero-web{display: none;}
+  .hero-mobile{display: block;}
+
 }

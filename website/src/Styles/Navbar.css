@@ -1,56 +1,21 @@
 
-.nav-bar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 30;
-    background-color: var(--theme-color);
-}
-.navigation{
- width: 100%;
-  color: var(--text-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navigation h1{
-    font-family: 'theme-font';
-    margin: 0;
-    padding: 10px;
-}
-.group{
-    padding: 10px;
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
+.nav-container{
+position: sticky;
+top: 0;
+margin: 10px;
 }
 
-.group a{
-    background-color: var(--text-color);
-    padding: 15px;
-    font-size: 14px;
-    margin-right: 10px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: all 6ms ease-in-out;
-}
-.group a:hover{
-background-color: var(--theme-color);
-color: var(--text-color);
-border: 1px solid var(--text-color);
+.hamburger-container{
+    background-color: #000;
 }
 
 .nav{
-    position: relative;
     display: none;
 }
 .nav-active{
-    position: relative;
-    animation: menu 3s 1;
-    transition: all 3s ease-in-out;
-    background-color: var(--theme-color);
+    animation: menu 10ms 1;
+    transition: all 10ms ease-in-out;
+    background-color: #000;
 }
 .nav-links{
     display: flex;
@@ -58,10 +23,10 @@ border: 1px solid var(--text-color);
 }
 .nav-link{
     text-decoration: none;
-    color: var(--text-color);
-padding: 15px;
+    color: #fff;
+    padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 1px solid #fff;
 }
 
 @keyframes menu {
@@ -73,12 +38,4 @@ padding: 15px;
     }
   }
     
-  /* Resonsive Code*/
 
-  @media only screen 
-and (max-width : 600px) {
-	.group a{
-        display: none;
-    }
-
-}
